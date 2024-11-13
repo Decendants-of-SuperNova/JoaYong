@@ -1,0 +1,66 @@
+body {
+  background-color: #e1ff7a;
+}
+
+/* 배경 이미지, 그라디언트, 그림자(box-shadow) 연습 */
+#joayong-goods {
+  width: 800px;
+  height: 400px;
+
+  /* 배경 이미지 -> 주소, 반복여부, 이미지 비율, 정렬방식 */
+  /* 그라데이션 -> background-img 속성에 속성값으로 linear-gradient(rgba(시작), rgba(끝)) 넣기
+  그라디언트 다음에 url을 쓰면 둘이 겹치게 넣을 수 있다.
+  https://cssgradient.io/ 
+  
+  background-image에서 이미지를 겹쳐 놓았다면 다른 속성들(repeat, size, position)을 설정할 때 쉼표로 구분하면 서로 다른설정 적용 가능*/
+
+  /* url 안에 사진 경로나 주소 넣기 + 웬만하면 따옴표로 감싸기 */
+  background-image: linear-gradient(
+      90deg,
+      rgba(79, 242, 1, 0.5) 19%,
+      rgba(89, 204, 158, 0.5) 72%
+    ),
+    url('https://www.yongin.go.kr/webcontent/ckeditor/2023/7/19/6ff9b48d-6ac0-4ceb-9018-ef1fef6fb36c.png');
+
+  /* 이미지를 어떻게 반복할지 */
+  background-repeat: no-repeat;
+
+  /* 이미지를 요소 안에 들어가게 맞추기 */
+  background-size: contain;
+
+  /* 그라디언트는 가운데 정렬, 사진은 가로로 300px 이동 */
+  background-position: center, 300px 0px;
+
+  /* 테두리 */
+  border: 5px solid rgba(54, 182, 255, 0.8);
+
+  margin: 180px auto;
+}
+
+.joayong,
+.joayong > #enjoy-joayong > button {
+  font-family: 'Jua', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#title {
+  height: 90px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#main-text {
+  padding-left: 30px;
+}
+
+#enjoy-joayong {
+  padding-left: 30px;
+}
+
+.joayong-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #e1ff7a;
+}
